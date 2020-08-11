@@ -35,7 +35,7 @@ document.querySelector('.btn').addEventListener('click', e => {
 });
 // Bubble phase
 ancestors.forEach(a => {
-  a.addEventListener('click', event => {
+  a.addEventListener('click', e=> {
     console.log(`Hello from ${e.currentTarget}`);
   });
 });
